@@ -29,6 +29,8 @@ Once the data is pre-processed, we can build and train the Random Forest model u
 
 The table below shows the key performance metrics for our Random Forest model.
 
+<div align="center">
+
 | Metric | Random Forest |
 |--------|--------------|
 | Accuracy | 0.82 |
@@ -39,13 +41,18 @@ The table below shows the key performance metrics for our Random Forest model.
 | F1-Score (Class 0) | 0.82 |
 | F1-Score (Class 1) | 0.83 |
 
+</div>
+
+
 - **Precision**: It tells us how often the model is correct when it says someone has the disease. It's about avoiding false alarms. For Class 1 (disease), precision is 78%, meaning 78% of the predictions for disease are correct.
 - **Recall**: It is the model's ability to catch everyone with the disease. For Class 1, recall is 88%, meaning the model correctly identified 88% of the people with the disease.
 - **F1-Score**: The F1-score balances precision and recall. It's like asking, how good is the model at both finding cases and avoiding false alarms. It combines the two into one score to give an overall picture of the model's performance. The balanced F1-scores (82% for Class 0 and 83% for Class 1) shows the model works well for both groups.
 
 We can also look at feature importance in our Random Forest model in the image below:
 
-![Feature Importance for Heart Disease Prediction](/images/feature_imp_blog2.png)
+<p align="center">
+  <img src="/images/feature_imp_blog2.png" alt="Feature Importance for Heart Disease Prediction">
+</p>
 
 The feature importance scores show how much each factor contributes to predicting heart disease. Chest pain type (cp), maximum heart rate achieved (thalach), and ST depression during exercise are the most important, meaning these clinical indicators strongly influence the model's predictions. Age and cholesterol levels are moderately important, while factors like gender and fasting blood sugar have less impact. This suggests the model relies heavily on detailed medical test results rather than general health or demographic factors.
 
