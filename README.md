@@ -6,6 +6,7 @@ This repository contains all the code files used in the blog series that explore
 ## What You'll Find Here
 - Code for applying machine learning models to healthcare problems
 - Datasets used in the blog
+- The blog for each healthcare problem
 
 ## About the Blog Series
 This blog series demonstrates how machine learning techniques can be applied to real-world healthcare problems in a straightforward, easy-to-understand way.
